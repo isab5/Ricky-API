@@ -16,6 +16,7 @@
 .avatar {
     width: 125px;
     border-radius: 50%;
+    border: 3px black solid;
 }
 
 .title {
