@@ -1,7 +1,10 @@
 .container {
     background-image: url("/background.jpg");
-    padding: 5rem;
+    padding: 2rem;
     min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .grid {
@@ -13,4 +16,66 @@
     align-items: center;
     justify-content: space-evenly;
     gap: 2rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.input {
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.buttonSearch {
+    width: 7rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: lightgreen;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.buttonSearch:hover {
+    background-color: green;
+    color: white;
+}
+
+.buttonReset {
+    width: 7rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.buttonReset:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.loading {
+    text-align: center;
+}
+
+.notFound {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    margin-top: 4rem;
 }
