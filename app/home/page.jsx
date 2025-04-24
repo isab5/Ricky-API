@@ -127,7 +127,7 @@ export default function Home() {
     };
 
     const handleCardClick = (char) => {
-        toast.info(`Você clicou em ${char.name} que está ${char.status}`);
+        toast.info(`Você clicou em ${char.name} que é ${char.species}`);
     };
 
 
