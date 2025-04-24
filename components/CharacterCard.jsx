@@ -9,6 +9,7 @@ export default function CharacterCard( {character, onClick } ) {
             <p>{character.species}</p>
             <p>{character.type || "Sem tipo"}</p>
             <p>{character.gender}</p>
+            <p>{character.created}</p>
         </div>
     );
 }

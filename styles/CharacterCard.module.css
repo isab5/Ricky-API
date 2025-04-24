@@ -1,12 +1,16 @@
 .card {
-    width: 275px;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 15px;
+    width: 17rem;
+    background: rgb(81, 55, 92);
+    backdrop-filter: blur(8px);
+    padding: 1.5rem;
+    border-radius: 2.5rem;
     text-align: center;
-    transition: transform 0.25s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    border: 1px solid black
+    border: 1px solid rgb(81, 55, 92);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    opacity: 0.8;
+    color: white;
 }
 
 .card:hover {
@@ -16,7 +20,8 @@
 .avatar {
     width: 125px;
     border-radius: 50%;
-    border: 3px black solid;
+    border: 1px solid rgb(81, 55, 92);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .title {

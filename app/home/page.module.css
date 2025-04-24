@@ -37,36 +37,41 @@
     width: 15rem;
     padding: 1rem;
     border-radius: 1rem;
+    border: none;
+}
+
+.input::placeholder {
+    color: #dddddd;
 }
 
 .buttonSearch {
     width: 7rem;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: lightgreen;
+    background-color: lightblue;
     color: black;
     cursor: pointer;
     transition: all 0.5s ease;
+    border: none;
+    background: linear-gradient(135deg, rgb(59, 59, 255), darkblue);
 }
 
 .buttonSearch:hover {
-    background-color: green;
+    background-color: darkblue;
     color: white;
 }
+
+
 
 .buttonReset {
     width: 7rem;
     padding: 1rem;
     border-radius: 1rem;
-    background-color: red;
+    background: linear-gradient(135deg, red, darkred);
     color: white;
     cursor: pointer;
     transition: all 0.5s ease;
-}
-
-.buttonReset:hover {
-    background-color: darkred;
-    color: white;
+    border: none;
 }
 
 .loading {
@@ -78,4 +83,43 @@
     text-align: center;
     color: white;
     margin-top: 4rem;
+}
+
+.navControls {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.buttonNav {
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: violet;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border: none;
+    background: linear-gradient(135deg, violet, darkviolet);
+}
+
+.buttonNav:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttonNav:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.pageIndicator {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 2rem;
+    justify-content: center;
+    display: flex;
 }
